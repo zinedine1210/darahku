@@ -79,3 +79,33 @@ footer {
     padding: 100px 0;
     font-size: 32px;
 }
+
+
+/* Hover effect */
+
+.container-image {
+    position: relative !important;
+}
+
+.overlay {
+    opacity: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    transition: opacity 0.4s ease-in-out !important;
+    background: black !important;
+    cursor: pointer !important;
+}
+
+.content {
+    position: absolute !important;
+    top: 80% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+.container-image:hover .overlay {
+    opacity: 0.8 !important;
+}
